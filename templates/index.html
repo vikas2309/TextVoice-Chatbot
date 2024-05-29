@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        #chatbox {
+            width: 500px;
+            height: 500px;
+            border: 1px solid #ccc;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+        }
+        #messages {
+            flex: 1;
+            padding: 10px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .chat-message {
+            padding: 10px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            max-width: 70%;
+        }
+        .chat-message.user {
+            background-color: #d1e7dd;
+            align-self: flex-start;
+        }
+        .chat-message.bot {
+            background-color: #f8d7da;
+            align-self: flex-end;
+            margin-left: auto;
+        }
+        .text-start {
+            text-align: left !important;
+        }
+        .text-end {
+            text-align: right !important;
+        }
+        #inputArea {
+            display: flex;
+            align-items: center;
+        }
+        #inputArea input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+        #inputArea button {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-top: none;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        #mic-icon {
+            cursor: pointer;
+            width: 32px; 
+            height: 32px; 
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chat with Saanvi</h1>
+    <div id="chatbox">
+        <div id="messages">
+            <!-- Bot's initial message -->
+            <div class="chat-message bot text-end">
+                Hi, I am Saanvi, built by Vikas Reddy Ginuga. I am here to help you with queries related to KMIT College! (Type 'quit' to exit)
+            </div>
+        </div>
+        <div id="inputArea">
+            <input type="text" id="userInput" placeholder="Type your message here...">
+            <svg id="mic-icon" height="32px" width="32px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 278.163 278.163" xml:space="preserve">
+                <g>
+                    <g>
+                        <path style="fill:#4EFFBB;" d="M225.235,94.987h-25.17V69.762c0-29.47-23.281-53.436-51.902-53.436
+                            c-28.594,0-51.875,23.965-51.875,53.436v25.225H69.283c-3.834,0-6.957,3.177-6.957,7.148v50.067
+                            c0,45.794,34.4,83.454,78.004,87.097v24.568h-20.596c-3.834,0-6.929,3.177-6.929,7.148c0,3.944,3.095,7.148,6.929,7.148h54.12
+                            c3.834,0,6.957-3.204,6.957-7.148c0-3.971-3.122-7.148-6.957-7.148h-19.665v-24.568c43.603-3.643,77.976-41.302,77.976-87.097
+                            v-50.067C232.165,98.165,229.07,94.987,225.235,94.987z M218.279,152.203c0,40.316-31.853,73.128-71.019,73.128
+                            s-71.047-32.812-71.047-73.128v-42.918h20.076v41.713c0,29.443,23.281,53.436,51.875,53.436c28.621,0,51.902-23.993,51.902-53.436
+                            v-41.713h18.214C218.279,109.284,218.279,152.203,218.279,152.203z"/>
+                        <g id="XMLID_18_">
+                            <g>
+                                <path style="fill:#302C58;" d="M169.852,114.513v20.158c0,21.582-17.036,39.139-38.016,39.139
+                                    c-20.952,0-37.988-17.556-37.988-39.139v-20.158h7.176c3.807,0,6.929-3.204,6.929-7.149c0-3.944-3.122-7.148-6.929-7.148h-7.176
+                                    V63.433h7.176c3.807,0,6.929-3.204,6.929-7.149s-3.122-7.149-6.929-7.149h-6.929c2.082-19.556,18.214-34.839,37.742-34.839
+                                    c19.556,0,35.688,15.283,37.769,34.839h-7.258c-3.834,0-6.929,3.205-6.929,7.149s3.095,7.149,6.929,7.149h7.505v36.783h-7.505
+                                    c-3.834,0-6.929,3.204-6.929,7.148s3.095,7.149,6.929,7.149C162.348,114.513,169.852,114.513,169.852,114.513z"/>
+                                <path style="fill:#222051;" d="M53.458,137.824L53.458,137.824c-4.18,0-7.359,3.659-6.907,7.814
+                                    c1.137,10.443,4.073,20.331,8.474,29.336c1.175,2.407,3.607,3.949,6.286,3.949h0.063c5.122,0,8.526-5.368,6.253-9.956
+                                    c-3.782-7.625-6.302-16.02-7.272-24.888C59.968,140.532,57.026,137.824,53.458,137.824z"/>
+                                <path style="fill:#222051;" d="M208.909,78.661h-25.17V53.436C183.738,23.965,160.458,0,131.836,0
+                                    c-28.594,0-51.875,23.965-51.875,53.436v25.225H52.956c-3.834,0-6.957,3.177-6.957,7.149v40.818
+                                    c0,3.834,3.109,6.943,6.943,6.943l0,0c3.834,0,6.943-3.109,6.943-6.943v-33.67h20.076v41.713
+                                    c0,29.443,23.281,53.436,51.902,53.436c28.621,0,51.902-23.993,51.902-53.436V93.583h18.214v47.278
+                                    c0,39.873-31.852,72.686-71.019,72.686s-71.047-32.812-71.047-72.686c0-3.834-3.109-6.943-6.943-6.943
+                                    c-3.834,0-6.943,3.109-6.943,6.943c0,45.15,34.365,82.584,77.519,87.029v24.636h-19.665c-3.834,0-6.929,3.204-6.929,7.148
+                                    c0,3.944,3.095,7.148,6.929,7.148h54.12c3.834,0,6.957-3.204,6.957-7.148c0-3.944-3.122-7.148-6.957-7.148h-20.596v-24.636
+                                    c43.154-4.445,77.519-41.879,77.519-87.029V85.81C215.839,81.838,212.743,78.661,208.909,78.661z M169.852,100.216h-7.505
+                                    c-3.834,0-6.929,3.204-6.929,7.148s3.095,7.149,6.929,7.149h7.505v20.158c0,21.582-17.036,39.139-38.016,39.139
+                                    c-20.952,0-37.988-17.556-37.988-39.139v-20.158h7.176c3.807,0,6.929-3.204,6.929-7.149c0-3.944-3.122-7.148-6.929-7.148h-7.176
+                                    V63.433h7.176c3.807,0,6.929-3.204,6.929-7.149s-3.122-7.149-6.929-7.149h-6.929c2.082-19.556,18.214-34.839,37.742-34.839
+                                    c19.556,0,35.688,15.283,37.769,34.839h-7.258c-3.834,0-6.929,3.205-6.929,7.149s3.095,7.149,6.929,7.149h7.505v36.783H169.852z
+                                    "/>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        var recognition;
+        $(document).ready(function() {
+            $('#mic-icon').click(function() {
+                startRecording();
+            });
+
+            $('#userInput').keypress(function(event) {
+                if (event.which === 13) {
+                    sendMessage();
+                }
+            });
+
+            function startRecording() {
+                recognition = new webkitSpeechRecognition();
+                recognition.continuous = true;
+                recognition.interimResults = true;
+                recognition.lang = 'en-US';
+
+                recognition.onresult = function(event) {
+                    var interim_transcript = '';
+                    for (var i = event.resultIndex; i < event.results.length; ++i) {
+                        if (event.results[i].isFinal) {
+                            var final_transcript = event.results[i][0].transcript;
+                            $('#messages').append('<div class="chat-message user text-start">' + final_transcript + '</div>');
+                            recognition.stop(); // Stop speech recognition
+                            sendText(final_transcript);
+                        } else {
+                            interim_transcript += event.results[i][0].transcript;
+                        }
+                    }
+                };
+
+                recognition.start();
+            }
+
+            function sendText(textData) {
+                $.ajax({
+                    url: '/voice',
+                    type: 'POST',
+                    data: { text_data: textData },
+                    success: function(response) {
+                        $('#messages').append('<div class="chat-message bot text-end">' + response.response + '</div>');
+                    },
+                    error: function(xhr, status, error) {
+                        console.error(error);
+                    }
+                });
+            }
+        });
+
+        function sendMessage() {
+            const userInput = document.getElementById('userInput').value;
+            if (userInput.trim() === '') return;
+            const messageBox = document.getElementById('messages');
+            const userMessage = document.createElement('div');
+            userMessage.textContent = userInput;
+            userMessage.classList.add('chat-message', 'user', 'text-start');
+            messageBox.appendChild(userMessage);
+            document.getElementById('userInput').value = '';
+
+            fetch('/chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ message: userInput })
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                const botMessage = document.createElement('div');
+                botMessage.textContent = data.response;
+                botMessage.classList.add('chat-message', 'bot','text-end');
+                messageBox.appendChild(botMessage);
+                messageBox.scrollTop = messageBox.scrollHeight;
+            })
+            .catch(error => {
+                console.error('There was a problem with the fetch operation:', error);
+            });
+        }
+    </script>
+</body>
+</html>

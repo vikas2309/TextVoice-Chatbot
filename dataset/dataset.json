@@ -1,0 +1,873 @@
+{
+        "intents": [
+
+          {
+            "tag": "greeting",
+            "patterns": [
+              "Hi",
+              "Hey",
+              "How are you?",
+              "Is anyone there?",
+              "Hello",
+              "Good day",
+              "What's up?",
+              "Greetings",
+              "Hey there"
+            ],
+            "responses": [
+              "Hey there! How can I assist you today?",
+              "Hello! Thanks for visiting. How can I help?",
+              "Hi there! What can I do for you?"
+            ]
+          },
+          {
+                "tag": "identity",
+                "patterns": [
+                        "who are you?",
+                        "what are you",
+                        "who built you?", 
+                        "who is saanvi?"
+                ],
+                "responses": [
+                        "I am an AI Chatbot built by Vikas Reddy Ginuga!, my task is to handle queries about KMIT College by interacting with users."
+                ]
+           },
+           {
+                "tag": "time",
+                "patterns": [
+                        "what are your timings?",
+                        "when are you open?"
+                ],
+                "responses": [
+                        "The visiting and meeting hours for the office space are from 9 AM to 6 PM"
+                ]
+          },
+          {
+            "tag": "goodbye",
+            "patterns": [
+              "Bye",
+              "See you later",
+              "Goodbye",
+              "I have to go",
+              "Catch you later",
+              "Take care"
+            ],
+            "responses": [
+              "See you later, thanks for visiting!",
+              "Goodbye! Have a great day!",
+              "Bye! Come back again soon."
+            ]
+          },
+          {
+            "tag": "about_us",
+            "patterns": [
+              "Tell me about KMIT",
+              "What is KMIT?",
+              "Give me some information about KMIT",
+              "About KMIT",
+              "Can you provide details about KMIT?",
+              "What does KMIT stand for?",
+              "Brief me about KMIT",
+              "I'd like to know more about KMIT",
+              "KMIT"
+            ],
+            "responses": [
+              "Established in 2007, KMIT is affiliated to Jawaharlal Nehru Technological University Hyderabad and is approved by AICTE. KMIT believes in a learner-centric environment and modernizes its resources and teaching processes to align with the latest technological trends.",
+              "KMIT, founded in 2007, is affiliated to Jawaharlal Nehru Technological University Hyderabad and approved by AICTE. We focus on encouraging learner autonomy with continuous efforts to modernize resources and teaching methodologies.",
+              "Since 2007, KMIT has been affiliated with Jawaharlal Nehru Technological University Hyderabad and approved by AICTE. We emphasize creating a learner-centric environment and constantly upgrade our resources and teaching methods."
+            ]
+          },
+          {
+            "tag": "vision",
+            "patterns": [
+              "What is the vision of KMIT?",
+              "Tell me the vision of KMIT",
+              "KMIT vision",
+              "What does KMIT aspire to achieve?",
+              "Can you share KMIT's vision?",
+              "What's the future vision of KMIT?"
+            ],
+            "responses": [
+              "KMIT's vision is to be the fountainhead in producing highly skilled, globally competent engineers and making India a world leader in software products and services.",
+              "Our vision at KMIT is to produce quality graduates trained in the latest software technologies and related tools, striving to make India a leader in software products and services.",
+              "The vision of KMIT is to become a leading institution in producing skilled, globally competent engineers and to make India a leader in the software industry."
+            ]
+          },
+          {
+            "tag": "mission",
+            "patterns": [
+              "What is the mission of KMIT?",
+              "Tell me the mission of KMIT",
+              "KMIT mission",
+              "What are the goals of KMIT?",
+              "Can you explain KMIT's mission?",
+              "What's the mission statement of KMIT?"
+            ],
+            "responses": [
+              "KMIT's mission is to provide a learning environment that fosters problem-solving skills, professional ethics, and lifelong learning through various platforms, preparing students to become successful professionals.",
+              "Our mission at KMIT is to establish industry interactions to prepare students for the industry, promote research-based projects, and encourage students to create new enterprises.",
+              "The mission of KMIT is to support students and faculty in accelerating their learning and professional growth, while also promoting nationalism and developing effective solutions to India's challenges."
+            ]
+          },
+          {
+            "tag": "equity_policy",
+            "patterns": [
+              "Tell me about KMIT's equity policy",
+              "What is KMIT's equity policy?",
+              "Equity policy of KMIT",
+              "Can you explain KMIT's equity policy?",
+              "What is the policy for equity at KMIT?"
+            ],
+            "responses": [
+              "KMIT is committed to achieving global excellence in teaching, research, consulting, and placements by providing a conducive environment in the fields of computer sciences and information technology.",
+              "Our equity policy focuses on maintaining global standards in teaching, research, and placements, ensuring continuous advancement in computer sciences and IT.",
+              "At KMIT, we are dedicated to creating a professional and global outlook in teaching and research, striving for excellence in all our endeavors."
+            ]
+          },
+          {
+            "tag": "full form",
+            "patterns": [
+              "kmit full form",
+              "kmit",
+              "what kmit means",
+              "kmit means",
+              "full form of KMIT?"
+            ],
+            "responses": [
+              "Keshav Memorial Institute of Technology"
+              ]
+          },
+          {
+            "tag": "core_values",
+            "patterns": [
+              "core values",
+              "What are the core values of KMIT?",
+              "Tell me the core values of KMIT",
+              "KMIT core values",
+              "Can you list the core values of KMIT?",
+              "What values does KMIT uphold?",
+              "Explain the core values of KMIT"
+            ],
+            "responses": [
+              "KMIT values nurturing core principles that align with its mission and vision, and are reflected in the curricular and personal growth of faculty, staff, and students.",
+              "Our core values include fostering an environment that upholds institutional ideals and connects with the national spirit, making KMIT a temple of learning and knowledge.",
+              "At KMIT, we emphasize core values that support the overall development of faculty, staff, and students, ensuring they align with our mission and vision."
+            ]
+          },
+          {
+            "tag": "achievements",
+            "patterns": [
+              "achievements",
+              "Tell me about KMIT's achievements",
+              "What are the achievements of KMIT?",
+              "KMIT achievements",
+              "Can you list some achievements of KMIT?",
+              "What has KMIT accomplished?",
+              "Share some achievements of KMIT"
+            ],
+            "responses": [
+              "KMIT has achieved numerous accolades, including ranking among the top 100 local chapters by NPTEL in 2021 and winning 1st Prize in the Smart India Hackathon in 2018.",
+              "Our achievements include being awarded INR 50 Lakhs for a research project by BIRAC in 2020, and ranking 91 globally in the IEEEXTREME Competition in 2019.",
+              "KMIT has been recognized for its innovation and growth, including 4.5 stars by the Institution Innovation Council in 2020 and multiple awards by Cambridge English Language Assessment."
+            ]
+          },
+          {
+            "tag": "achievement_yearwise",
+            "patterns": [
+              "Tell me about KMIT's achievements in 2021",
+              "What were KMIT's achievements in 2020?",
+              "KMIT achievements in 2019",
+              "List KMIT's achievements for 2018",
+              "What did KMIT achieve in 2017?",
+              "Share KMIT's achievements yearwise",
+              "Can you tell me KMIT's achievements in 2016?",
+              "What are the accomplishments of KMIT in 2015?",
+              "Achievements of KMIT in 2013",
+              "What did KMIT achieve in 2010?"
+            ],
+            "responses": [
+              "In 2021, KMIT was ranked among the top 100 local chapters by NPTEL.",
+              "In 2020, KMIT was awarded INR 50 Lakhs for the Clinical Translational Research CAD project by BIRAC, Dept. of Biotechnology, Govt. of India, and received 4.5 stars by Institution Innovation Council.",
+              "In 2019, KMIT was ranked 91 globally in the IEEEXTREME Competition.",
+              "In 2018 and 2019, KMIT ranked 1 in NPTEL and won 1st Prize in Smart India Hackathon in 2018.",
+              "In 2017, KMIT won the award for Best Academic Support at the Best 25 Higher Education Preparation Centre Awards for South Asia organised by Cambridge English Language Assessment.",
+              "In 2016, KMIT won the award for Innovation & Growth at the Cambridge English Annual Coordinators Meet.",
+              "In 2015, KMIT was a finalist at the Cambridge English Language Assessment awards for preparation centres in the category of Digital Innovation & Technology. We were the only college in Asia to make it.",
+              "In 2013, KMIT bagged 2nd position all over India in the Microsoft Imagine Cup.",
+              "From 2018 to the present, KMIT has had 64 GSoC projects.",
+              "In 2010, KMIT ranked first in IBM's The Great Mind Challenge, a national competition."
+            ]
+          },
+          {
+            "tag": "about_kmit_courses",
+            "patterns": [
+              "kmit courses",
+              "Tell me about KMIT's courses",
+              "What courses does KMIT offer?",
+              "KMIT courses",
+              "Can you provide information about KMIT's courses?",
+              "What degrees are available at KMIT?"
+            ],
+            "responses": [
+              "KMIT offers various B.Tech programs accredited by AICTE and affiliated to JNTUH, Hyderabad. These include Computer Science & Engineering (CSE), Computer Science & Engineering (Artificial Intelligence & Machine Learning) (CSM), Computer Science & Engineering (Data Science) (CSD), and Information Technology (INF)."
+            ]
+          },
+          {
+            "tag": "accreditation",
+            "patterns": [
+              "accreditation",
+              "Is KMIT accredited?",
+              "What is KMIT's accreditation status?",
+              "Accreditation of KMIT",
+              "Is KMIT accredited by any authority?"
+            ],
+            "responses": [
+              "Yes, KMIT is accredited with 'A' Grade by National Assessment and Accreditation Council (NAAC) and also accredited by National Board of Accreditation (NBA)."
+            ]
+          },
+          {
+            "tag": "affiliation",
+            "patterns": [
+              "Is KMIT affiliated to any university?",
+              "What university is KMIT affiliated to?",
+              "Affiliation of KMIT"
+            ],
+            "responses": [
+              "KMIT is affiliated to Jawaharlal Nehru Technological University Hyderabad (JNTUH), Hyderabad."
+            ]
+          },
+          {
+            "tag": "recognition",
+            "patterns": [
+              "Is KMIT recognized by any authority?",
+              "What is the recognition status of KMIT?",
+              "Recognition of KMIT"
+            ],
+            "responses": [
+              "Yes, KMIT is recognized by the Government of Telangana."
+            ]
+          },
+          {
+            "tag": "btech_programs",
+            "patterns": [
+              "What B.Tech programs does KMIT offer?",
+              "List KMIT's B.Tech programs",
+              "B.Tech programs at KMIT",
+              "KMIT B.Tech courses"
+            ],
+            "responses": [
+              "KMIT offers the following B.Tech programs: Computer Science & Engineering (CSE), Computer Science & Engineering (Artificial Intelligence & Machine Learning) (CSM), Computer Science & Engineering (Data Science) (CSD), and Information Technology (INF)."
+            ]
+          },
+          {
+            "tag": "cse_intake",
+            "patterns": [
+              "What is the intake for Computer Science & Engineering (CSE) at KMIT?",
+              "How many seats are available for CSE at KMIT?",
+              "CSE intake at KMIT"
+            ],
+            "responses": [
+              "For Computer Science & Engineering (CSE), KMIT has a total intake of 420 seats, with 126 management seats/NRI seats and 294 convenor seats."
+            ]
+          },
+          {
+            "tag": "csm_intake",
+            "patterns": [
+              "What is the intake for Computer Science & Engineering (Artificial Intelligence & Machine Learning) (CSM) at KMIT?",
+              "How many seats are available for CSM at KMIT?",
+              "CSM intake at KMIT"
+            ],
+            "responses": [
+              "For Computer Science & Engineering (Artificial Intelligence & Machine Learning) (CSM), KMIT has a total intake of 180 seats, with 54 management seats/NRI seats and 126 convenor seats."
+            ]
+          },
+          {
+            "tag": "csd_intake",
+            "patterns": [
+              "What is the intake for Computer Science & Engineering (Data Science) (CSD) at KMIT?",
+              "How many seats are available for CSD at KMIT?",
+              "CSD intake at KMIT"
+            ],
+            "responses": [
+              "For Computer Science & Engineering (Data Science) (CSD), KMIT has a total intake of 120 seats, with 36 management seats/NRI seats and 84 convenor seats."
+            ]
+          },
+          {
+            "tag": "inf_intake",
+            "patterns": [
+              "What is the intake for Information Technology (INF) at KMIT?",
+              "How many seats are available for INF at KMIT?",
+              "INF intake at KMIT"
+            ],
+            "responses": [
+              "For Information Technology (INF), KMIT has a total intake of 120 seats, with 36 management seats/NRI seats and 84 convenor seats."
+            ]
+          },
+          {
+            "tag": "aicte_approval",
+            "patterns": [
+              "Did KMIT obtain AICTE approval for any B.Tech programs?",
+              "Which B.Tech programs at KMIT received AICTE approval?",
+              "AICTE approval for KMIT B.Tech courses"
+            ],
+            "responses": [
+              "Yes, KMIT obtained AICTE approval to start Computer Science & Engineering (Artificial Intelligence & Machine Learning) (CSM) and Computer Science & Engineering (Data Science) (CSD) programs from 2020-21."
+            ]
+          },
+          {
+            "tag": "eligibility_criteria",
+            "patterns": [
+              "What are the eligibility criteria for B.Tech admission at KMIT?",
+              "Can you tell me about the eligibility criteria for B.Tech admission?",
+              "Eligibility criteria for B.Tech at KMIT",
+              "What qualifications are required for B.Tech admission at KMIT?"
+            ],
+            "responses": [
+              "To be eligible for admission to the B.Tech program at KMIT, candidates must have passed the Intermediate (10+2) examination conducted by the board of Intermediate education, Govt. of Telangana State, or any other examination recognized as equivalent, with Mathematics, Physics, and Chemistry as optional subjects.",
+              "Eligibility for B.Tech admission at KMIT requires candidates to have completed their Intermediate (10+2) with Mathematics, Physics, and Chemistry as optional subjects, or any equivalent qualification recognized by the board of Intermediate education, Govt. of Telangana State.",
+              "Candidates seeking admission to the B.Tech program at KMIT should have passed the Intermediate (10+2) examination or its equivalent with Mathematics, Physics, and Chemistry as optional subjects. This is the basic eligibility criteria for B.Tech admission."
+            ]
+          },
+          {
+            "tag": "admission_process",
+            "patterns": [
+              "How are admissions conducted for the B.Tech program at KMIT?",
+              "Tell me about the admission process for B.Tech at KMIT",
+              "Admission process for B.Tech at KMIT",
+              "What is the admission pattern for B.Tech admission at KMIT?"
+            ],
+            "responses": [
+              "Admissions to the B.Tech program at KMIT are made along with other engineering colleges in the state through a common entrance test (EAMCET) conducted by the Govt. of Telangana State. 70% of the seats are allotted based on the merit in EAMCET, while 30% of the seats are earmarked for Management/NRI candidates.",
+              "The admission process for the B.Tech program at KMIT involves appearing for the common entrance test (EAMCET) conducted by the Govt. of Telangana State. Seats are allocated based on the merit in EAMCET, with a certain percentage reserved for Management/NRI candidates.",
+              "Candidates seeking admission to the B.Tech program at KMIT need to appear for the common entrance test (EAMCET) conducted by the Govt. of Telangana State. Admissions are based on the merit in EAMCET, and a specific percentage of seats are reserved for Management/NRI candidates."
+            ]
+          },
+          {
+            "tag": "diploma_holders_admission",
+            "patterns": [
+              "How can diploma holders get admission to the B.Tech program at KMIT?",
+              "Tell me about admission for diploma holders at KMIT",
+              "Diploma holders admission to B.Tech at KMIT",
+              "Admission process for diploma holders at KMIT"
+            ],
+            "responses": [
+              "Diploma holders are admitted to the second year of the B.Tech program at KMIT to the extent of 10% of intake based on the merit in the ECET, under the lateral entry scheme.",
+              "Admission for diploma holders to the B.Tech program at KMIT is conducted through the lateral entry scheme, where they are admitted directly to the second year based on the merit in the ECET. This scheme allows diploma holders to pursue their B.Tech degree.",
+              "At KMIT, diploma holders can secure admission to the second year of the B.Tech program through the lateral entry scheme. This scheme reserves 10% of the total intake for diploma holders, and admission is based on the merit in the ECET."
+            ]
+          },
+          {
+            "tag": "fee_structure",
+            "patterns": [
+              "What is the fee structure for the B.Tech program at KMIT?",
+              "Tell me about the fee structure for B.Tech at KMIT",
+              "Fee structure for B.Tech at KMIT",
+              "How much is the tuition fee for B.Tech at KMIT?"
+            ],
+            "responses": [
+              "The fee structure for the B.Tech program at KMIT for the academic year 2023-24 is as follows:\n\nTuition Fee: ₹ 103,000\nSpecial Fee: ₹ 5,500\nNBA Fee: ₹ 3,000",
+              "For the academic year 2023-24, the fee structure for the B.Tech program at KMIT is:\n\nTuition Fee: ₹ 103,000\nSpecial Fee: ₹ 5,500\nNBA Fee: ₹ 3,000",
+              "At KMIT, the fee structure for the B.Tech program for the academic year 2023-24 is:\n\nTuition Fee: ₹ 103,000\nSpecial Fee: ₹ 5,500\nNBA Fee: ₹ 3,000"
+            ]
+          },
+          {
+            "tag": "contact_admissions",
+            "patterns": [
+              "How can I contact the Admissions Department at KMIT?",
+              "Contact details for admissions at KMIT",
+              "Admissions department contact at KMIT",
+              "I want to inquire about admissions at KMIT"
+            ],
+            "responses": [
+              "For more information about admissions at KMIT, please contact the Admissions Department at 6302140205.",
+              "You can reach out to the Admissions Department at KMIT for any inquiries regarding admissions by contacting them at 6302140205.",
+              "To inquire about admissions at KMIT, feel free to contact the Admissions Department at 6302140205. They will assist you with any queries you may have."
+            ]
+          },
+          {
+            "tag": "csd_female_open",
+            "patterns": [
+              "What was the EAMCET last rank for Computer Science & Engineering (Data Science) (CSD) - Female (Open) at KMIT in 2023?"
+            ],
+            "responses": [
+              "The EAMCET 2023 last rank for Computer Science & Engineering (Data Science) (CSD) - Female (Open) at KMIT was 2073."
+            ]
+          },
+          {
+            "tag": "csd_female_close",
+            "patterns": [
+              "What was the EAMCET last rank for Computer Science & Engineering (Data Science) (CSD) - Female (Close) at KMIT in 2023?"
+            ],
+            "responses": [
+              "The EAMCET 2023 last rank for Computer Science & Engineering (Data Science) (CSD) - Female (Close) at KMIT was 7483."
+            ]
+          },
+          {
+            "tag": "csd_male_open",
+            "patterns": [
+              "What was the EAMCET last rank for Computer Science & Engineering (Data Science) (CSD) - Male (Open) at KMIT in 2023?"
+            ],
+            "responses": [
+              "The EAMCET 2023 last rank for Computer Science & Engineering (Data Science) (CSD) - Male (Open) at KMIT was 3121."
+            ]
+          },
+          {
+            "tag": "csd_male_close",
+            "patterns": [
+              "What was the EAMCET last rank for Computer Science & Engineering (Data Science) (CSD) - Male (Close) at KMIT in 2023?"
+            ],
+            "responses": [
+              "The EAMCET 2023 last rank for Computer Science & Engineering (Data Science) (CSD) - Male (Close) at KMIT was 6809."
+            ]
+          },
+          {
+            "tag": "cse_female_open",
+            "patterns": [
+              "What was the EAMCET last rank for Computer Science & Engineering (CSE) - Female (Open) at KMIT in 2023?"
+            ],
+            "responses": [
+              "The EAMCET 2023 last rank for Computer Science & Engineering (CSE) - Female (Open) at KMIT was 2038."
+            ]
+          },
+          {
+            "tag": "cse_female_close",
+            "patterns": [
+              "What was the EAMCET last rank for Computer Science & Engineering (CSE) - Female (Close) at KMIT in 2023?"
+            ],
+            "responses": [
+              "The EAMCET 2023 last rank for Computer Science & Engineering (CSE) - Female (Close) at KMIT was 5696."
+            ]
+          },
+          {
+            "tag": "cse_male_open",
+            "patterns": [
+              "What was the EAMCET last rank for Computer Science & Engineering (CSE) - Male (Open) at KMIT in 2023?"
+            ],
+            "responses": [
+              "The EAMCET 2023 last rank for Computer Science & Engineering (CSE) - Male (Open) at KMIT was 2422."
+            ]
+          },
+          {
+            "tag": "cse_male_close",
+            "patterns": [
+              "What was the EAMCET last rank for Computer Science & Engineering (CSE) - Male (Close) at KMIT in 2023?"
+            ],
+            "responses": [
+              "The EAMCET 2023 last rank for Computer Science & Engineering (CSE) - Male (Close) at KMIT was 5199."
+            ]
+          },
+          {
+            "tag": "csm_female_open",
+            "patterns": [
+              "What was the EAMCET last rank for Computer Science & Engineering (Artificial Intelligence & Machine Learning) (CSM) - Female (Open) at KMIT in 2023?"
+            ],
+            "responses": [
+              "The EAMCET 2023 last rank for Computer Science & Engineering (Artificial Intelligence & Machine Learning) (CSM) - Female (Open) at KMIT was 1931."
+            ]
+          },
+          {
+            "tag": "csm_female_close",
+            "patterns": [
+              "What was the EAMCET last rank for Computer Science & Engineering (Artificial Intelligence & Machine Learning) (CSM) - Female (Close) at KMIT in 2023?"
+            ],
+            "responses": [
+              "The EAMCET 2023 last rank for Computer Science & Engineering (Artificial Intelligence & Machine Learning) (CSM) - Female (Close) at KMIT was 6911."
+            ]
+          },
+          {
+            "tag": "csm_male_open",
+            "patterns": [
+              "What was the EAMCET last rank for Computer Science & Engineering (Artificial Intelligence & Machine Learning) (CSM) - Male (Open) at KMIT in 2023?"
+            ],
+            "responses": [
+              "The EAMCET 2023 last rank for Computer Science & Engineering (Artificial Intelligence & Machine Learning) (CSM) - Male (Open) at KMIT was 2647."
+            ]
+          },
+          {
+            "tag": "csm_male_close",
+            "patterns": [
+              "What was the EAMCET last rank for Computer Science & Engineering (Artificial Intelligence & Machine Learning) (CSM) - Male (Close) at KMIT in 2023?"
+            ],
+            "responses": [
+              "The EAMCET 2023 last rank for Computer Science & Engineering (Artificial Intelligence & Machine Learning) (CSM) - Male (Close) at KMIT was 6097."
+            ]
+          },
+          {
+            "tag": "it_female_open",
+            "patterns": [
+              "What was the EAMCET last rank for Information Technology (IT) - Female (Open) at KMIT in 2023?"
+            ],
+            "responses": [
+              "The EAMCET 2023 last rank for Information Technology (IT) - Female (Open) at KMIT was 4982."
+            ]
+          },
+          {
+            "tag": "it_female_close",
+            "patterns": [
+              "What was the EAMCET last rank for Information Technology (IT) - Female (Close) at KMIT in 2023?"
+            ],
+            "responses": [
+              "The EAMCET 2023 last rank for Information Technology (IT) - Female (Close) at KMIT was 8659."
+            ]
+          },
+          {
+            "tag": "it_male_open",
+            "patterns": [
+              "What was the EAMCET last rank for Information Technology (IT) - Male (Open) at KMIT in 2023?"
+            ],
+            "responses": [
+              "The EAMCET 2023 last rank for Information Technology (IT) - Male (Open) at KMIT was 4377."
+            ]
+          },
+          {
+            "tag": "it_male_close",
+            "patterns": [
+              "What was the EAMCET last rank for Information Technology (IT) - Male (Close) at KMIT in 2023?"
+            ],
+            "responses": [
+              "The EAMCET 2023 last rank for Information Technology (IT) - Male (Close) at KMIT was 7325."
+            ]
+          },
+          {
+            "tag": "birac_project",
+            "patterns": [
+              "What is the BIRAC project about?",
+              "Tell me about the BIRAC project at KMIT.",
+              "Can you provide details about the BIRAC project?"
+            ],
+            "responses": [
+              "The BIRAC project at KMIT involves developing an AI-powered Clinical Translational Research CAD (Computer Aided Disease Detection & Diagnostics System) for various cancers.",
+              "KMIT's BIRAC project focuses on creating an end-to-end clinical diagnostics workflow, initially for Breast Cancer detection.",
+              "In the BIRAC project, KMIT is developing an AI-driven system for disease detection and diagnostics, with a special emphasis on Breast Cancer."
+            ]
+          },
+          {
+            "tag": "telescope_platform",
+            "patterns": [
+              "What is the Telescope platform by KMIT?",
+              "Tell me more about the Telescope platform launched by KMIT.",
+              "Can you explain how the Telescope platform works?"
+            ],
+            "responses": [
+              "Telescope is a digital platform launched by KMIT in 2016 for scheduling activities and virtual classrooms for undergraduate students of all streams.",
+              "The Telescope platform allows students to access scheduled activities and attend virtual classes through Adobe Connect.",
+              "With the Telescope platform, KMIT students can conveniently schedule and participate in virtual classrooms using Adobe Connect."
+            ]
+          },
+          {
+            "tag": "tessellator_lms",
+            "patterns": [
+              "What is Tessellator at KMIT?",
+              "Tell me about the Tessellator learning management system used at KMIT.",
+              "Can you elaborate on the features of Tessellator?"
+            ],
+            "responses": [
+              "Tessellator is KMIT's customized learning management system, based on MOODLE, offering modules for quizzes and programming assignments.",
+              "At KMIT, Tessellator serves as the primary learning management system, providing modules for quizzes and programming assignments.",
+              "KMIT's Tessellator learning management system, based on MOODLE, offers features like quizzes and programming assignments to enhance student learning."
+            ]
+          },
+          {
+            "tag": "consultancy_projects",
+            "patterns": [
+              "What consultancy projects is KMIT involved in?",
+              "Can you provide details about the consultancy projects at KMIT?",
+              "Tell me more about the consultancy projects undertaken by KMIT."
+            ],
+            "responses": [
+              "KMIT is engaged in consultancy projects like CrimeFreeBharat, focusing on internet protocols, cybercrimes, cyber forensic, and cyber security.",
+              "KMIT collaborates with various organizations on consultancy projects, including CrimeFreeBharat, to address cyber security challenges and internet crimes.",
+              "Consultancy projects like CrimeFreeBharat are integral to KMIT's efforts to contribute expertise in areas such as cyber security and forensic science."
+            ]
+          },
+          {
+            "tag": "research_workshops",
+            "patterns": [
+              "What research workshops has KMIT conducted?",
+              "Tell me about the research workshops organized by KMIT.",
+              "Can you provide information about the research workshops at KMIT?"
+            ],
+            "responses": [
+              "KMIT has organized research workshops on topics like Digital Pathology Annotations for Breast Cancer and AI and CUDA Programming for Defence Applications.",
+              "Research workshops at KMIT cover a wide range of topics, including Digital Pathology Annotations for Breast Cancer and AI and CUDA Programming.",
+              "KMIT conducts research workshops to enhance knowledge in specialized areas, such as Digital Pathology Annotations for Breast Cancer and AI and CUDA Programming."
+            ]
+          },
+          {
+            "tag": "webinars",
+            "patterns": [
+              "What webinars has KMIT conducted?",
+              "Tell me about the webinars organized by KMIT.",
+              "Can you provide details about the webinars at KMIT?"
+            ],
+            "responses": [
+              "KMIT has conducted webinars on Biomedical Imaging and Blockchain Technology to introduce faculty members and students to emerging technologies.",
+              "Webinars at KMIT cover diverse topics, including Biomedical Imaging and Blockchain Technology, to educate participants about cutting-edge research areas.",
+              "KMIT hosts webinars to foster learning and awareness on topics like Biomedical Imaging and Blockchain Technology among faculty and students."
+            ]
+          },
+          {
+            "tag": "gsoc",
+            "patterns": [
+              "What is Google Summer of Code (GSoC)?",
+              "Can you explain Google Summer of Code (GSoC)?",
+              "Tell me more about Google Summer of Code (GSoC)."
+            ],
+            "responses": [
+              "Google Summer of Code (GSoC) is a 10-week internship program where students collaborate with open-source organizations on programming projects.",
+              "GSoC offers students an opportunity to work on programming projects with open-source organizations during a 10-week internship program.",
+              "Google Summer of Code (GSoC) provides students with a paid internship to work on programming projects with open-source organizations."
+            ]
+          },
+          {
+            "tag": "library_vision",
+            "patterns": [
+              "What is the vision of the library at KMIT?",
+              "Tell me about the vision of KMIT library.",
+              "What are the goals of the KMIT Central Library?"
+            ],
+            "responses": [
+              "The vision of the KMIT Central Library is to promote intellectual growth and creativity by developing collections, facilitating access to information resources, teaching effective use of information resources and critical evaluation skills, and offering research assistance.",
+              "The KMIT Central Library aims to provide access to a broad range of learning resources and information services to students and faculty, fostering intellectual growth and creativity.",
+              "The goals of the KMIT Central Library include developing collections, facilitating access to information resources, teaching effective use of these resources, and offering research assistance to promote intellectual growth and creativity."
+            ]
+          },
+          {
+            "tag": "library_infrastructure",
+            "patterns": [
+              "What is the infrastructure of the KMIT library?",
+              "Tell me about the infrastructure of KMIT Central Library.",
+              "Can you describe the infrastructure of the library at KMIT?"
+            ],
+            "responses": [
+              "The KMIT Central Library began its existence in 2007 and is centrally located in the campus. It is divided into different sections including Stack area, Reading room, Reference and periodical Sections, Circulation, Digital library, and Reprographic Section.",
+              "The infrastructure of the KMIT Central Library includes sections like Stack area, Reading room, Reference and periodical Sections, Circulation, Digital library, and Reprographic Section.",
+              "The KMIT Central Library is centrally located on the campus and is surrounded by academic classrooms, laboratories, workshops, placement wing, and sports grounds. It offers various sections such as Stack area, Reading room, Reference and periodical Sections, Circulation, Digital library, and Reprographic Section."
+            ]
+          },
+          {
+            "tag": "library_rules",
+            "patterns": [
+              "What are the rules and regulations of the KMIT library?",
+              "Tell me about the rules of KMIT library.",
+              "Can you explain the regulations of the library at KMIT?"
+            ],
+            "responses": [
+              "The rules and regulations of the KMIT library include keeping belongings in the provided pigeon-hole racks, showing identity card at the checkpoint, signing in the register, obtaining prior permission from authorities for resource utilization, maintaining decency and decorum, refraining from marking or damaging books, and using dustbins for cleanliness.",
+              "Rules and regulations at the KMIT library include showing identity cards at the checkpoint, maintaining decency and decorum, refraining from marking or damaging books, and using dustbins for cleanliness.",
+              "The KMIT library has rules and regulations such as showing identity cards at the checkpoint, maintaining cleanliness by using dustbins, refraining from marking or damaging books, and maintaining decency and decorum."
+            ]
+          },
+          {
+            "tag": "print_resources",
+            "patterns": [
+              "What print resources are available at the KMIT library?",
+              "Tell me about the print resources in KMIT library.",
+              "Can you describe the print resources offered by the library at KMIT?"
+            ],
+            "responses": [
+              "The KMIT library has 19,430 books, 4,315 titles, and 73 print journals that cater to all branches of engineering and other disciplines.",
+              "Print resources at the KMIT library include 19,430 books, 4,315 titles, and 73 print journals covering various branches of engineering and other disciplines.",
+              "There are 19,430 books, 4,315 titles, and 73 print journals available at the KMIT library, covering a wide range of subjects including all branches of engineering."
+            ]
+          },
+          {
+            "tag": "sports_facilities",
+            "patterns": [
+              "What sports facilities are available at KMIT?",
+              "Tell me about the sports facilities at KMIT.",
+              "Can you describe the sports amenities at KMIT?"
+            ],
+            "responses": [
+              "KMIT offers various indoor and outdoor sports facilities, including badminton, yoga, chess, table tennis, caroms, football, basketball, and volleyball.",
+              "Sports facilities at KMIT include indoor games like badminton, yoga, chess, table tennis, caroms, and outdoor games like football, basketball, and volleyball.",
+              "At KMIT, students have access to a wide range of sports facilities, such as badminton, yoga, chess, table tennis, caroms, football, basketball, and volleyball."
+            ]
+          },
+          {
+            "tag": "co_curriculars",
+            "patterns": [
+              "What co-curricular activities are available at KMIT?",
+              "Tell me about the co-curricular programs at KMIT.",
+              "Can you describe the co-curricular initiatives at KMIT?"
+            ],
+            "responses": [
+              "KMIT offers various co-curricular activities, including Trishul, Arjuna, Niranthar FS, BEC (Cambridge English Business Certificates), SONET (School Of New & Emerging Technologies), and Project School.",
+              "Co-curricular programs at KMIT include Trishul, Arjuna, Niranthar FS, BEC (Cambridge English Business Certificates), SONET (School Of New & Emerging Technologies), and Project School.",
+              "At KMIT, students can participate in a range of co-curricular activities such as Trishul, Arjuna, Niranthar FS, BEC (Cambridge English Business Certificates), SONET (School Of New & Emerging Technologies), and Project School."
+            ]
+          },
+          {
+            "tag": "international_finishing_school",
+            "patterns": [
+              "What is the International Finishing School at KMIT?",
+              "Tell me about the International Finishing School program.",
+              "Can you describe the International Finishing School initiative at KMIT?"
+            ],
+            "responses": [
+              "The International Finishing School (IFS) at KMIT offers a suite of technical skills trainings aimed at corporate and international learners. It includes programs like Summer of Tech (SoT) and Full Stack Developer (FSD) - Javascript Program.",
+              "KMIT's International Finishing School (IFS) provides a range of technical skills trainings for corporate and international learners, featuring programs such as Summer of Tech (SoT) and Full Stack Developer (FSD) - Javascript Program.",
+              "At KMIT, the International Finishing School (IFS) offers technical skills trainings for corporate and international learners, including programs like Summer of Tech (SoT) and Full Stack Developer (FSD) - Javascript Program."
+            ]
+          },
+          {
+            "tag": "telescope_lms",
+            "patterns": [
+              "What is Telescope LMS used for at KMIT?",
+              "Tell me about the Telescope Learning Management System at KMIT.",
+              "Can you describe the features of Telescope LMS at KMIT?"
+            ],
+            "responses": [
+              "KMIT uses Telescope, an in-house Learning Management System (LMS), for various purposes including monitoring attendance, conducting classes, giving and evaluating assignments, compiling and executing programs, conducting and evaluating tests, and assessing student performance.",
+              "Telescope is the Learning Management System (LMS) used at KMIT for monitoring attendance, conducting classes, giving and evaluating assignments, compiling and executing programs, conducting and evaluating tests, and assessing student performance.",
+              "At KMIT, Telescope serves as the Learning Management System (LMS) for monitoring attendance, conducting classes, giving and evaluating assignments, compiling and executing programs, conducting and evaluating tests, and assessing student performance."
+            ]
+          },
+          {
+            "tag": "Trishul",
+            "patterns": [
+              "What is Trishul?",
+              "Tell me about Trishul at KMIT.",
+              "Trishul program details."
+            ],
+            "responses": [
+              "Trishul is a skill-enhancement initiative designed exclusively for first-year students at KMIT. It covers technologies such as Python and Building RIA, along with fundamental life skills like basic electrics, robotics, and cooking."
+            ]
+          },
+          {
+            "tag": "Arjuna",
+            "patterns": [
+              "What is Arjuna?",
+              "Can you explain the Arjuna coding competition?",
+              "How to participate in Arjuna at KMIT?"
+            ],
+            "responses": [
+              "Arjuna is a weekly coding competition conducted for KMIT students (1st to 3rd years). Sessions are held every Sunday, and winners receive cash prizes based on internal assessment and interviews."
+            ]
+          },
+          {
+            "tag": "Niranthar FS",
+            "patterns": [
+              "What is Niranthar Finishing School?",
+              "Tell me about Niranthar FS at KMIT.",
+              "How to join the Niranthar FS coding competition?"
+            ],
+            "responses": [
+              "Niranthar Finishing School (NFS) is a weekly coding competition conducted for KMIT students (1st to 3rd years). Sessions are held alternate days (Tuesday, Thursday, and Saturday), and winners receive cash prizes."
+            ]
+          },
+          {
+            "tag": "BEC",
+            "patterns": [
+              "What is BEC?",
+              "Can you explain the Cambridge English Business Certificates?",
+              "How to enroll in BEC courses?"
+            ],
+            "responses": [
+              "BEC (Cambridge English Business Certificates) is a program offered at KMIT to improve students' communication skills. It includes coaching for the Preliminary and Vantage levels. To enroll, students need to..."
+            ]
+          },
+          {
+            "tag": "SONET",
+            "patterns": [
+              "What is SONET?",
+              "Tell me about the School Of New & Emerging Technologies.",
+              "What are the outcomes of the SONET program?"
+            ],
+            "responses": [
+              "SONET (School Of New & Emerging Technologies) at KMIT offers comprehensive training in cutting-edge technologies like Blockchain, Artificial Intelligence, MERN Stack Development, Cybersecurity, and AR/VR. The outcomes include..."
+            ]
+          },
+          {
+            "tag": "Project School",
+            "patterns": [
+              "What is Project School?",
+              "Can you provide details about the curriculum of Project School?",
+              "How to participate in Project School?"
+            ],
+            "responses": [
+              "Project School at KMIT is designed to equip students with essential skills, in-depth knowledge, and hands-on experience in technologies like Blockchain, Artificial Intelligence, MERN Stack Development, Cybersecurity, and AR/VR. To participate, students need to..."
+            ]
+          },
+          {
+            "tag": "Clubs",
+            "patterns": [
+              "What are the cultural activities organized by Aakarshan?",
+              "Tell me about the music events hosted by Aalap.",
+              "What discussions take place in Kaivalya club?",
+              "Can you provide details about the drama performances by Abhinaya?",
+              "What kind of photography events are held by Kdarshan?",
+              "Which sports are promoted by Kreeda club?",
+              "Describe the dance programs organized by Mudra.",
+              "What coding projects are undertaken by Recurse?",
+              "Tell me about the literary events conducted by Vachan."
+            ],
+            "responses": [
+              "Aakarshan promotes cultural diversity through various events such as dance competitions, traditional performances, and art exhibitions.",
+              "Aalap hosts music concerts, workshops, and talent shows to encourage musical talents among students.",
+              "Kaivalya club organizes spiritual discussions, meditation sessions, and philosophical debates to explore deeper aspects of life.",
+              "Abhinaya presents theatrical productions, skits, and plays to showcase the dramatic talents of students.",
+              "Kdarshan conducts photography contests, workshops, and exhibitions to foster creativity and visual arts skills.",
+              "Kreeda promotes various sports activities including football, basketball, cricket, and athletics to encourage physical fitness and teamwork.",
+              "Mudra organizes dance workshops, performances, and competitions to celebrate different dance forms and styles.",
+              "Recurse undertakes coding projects, hackathons, and programming contests to enhance coding skills and innovation among students.",
+              "Vachan conducts literary discussions, poetry readings, and writing competitions to encourage literary pursuits and creativity."
+            ]
+          },
+          {
+            "tag": "Student Council",
+            "patterns": [
+              "What is the Student Council?",
+              "Role of the Student Council?",
+              "How to get involved in the Student Council?"
+            ],
+            "responses": [
+              "The Student Council at KMIT plays an integral role in the student community, providing a representative structure for students to debate issues and undertake initiatives for the college and wider community."
+            ]
+          },
+          {
+            "tag": "Clubs",
+            "patterns": [
+              "What is Aakarshan club?",
+              "Tell me about Kaivalya club.",
+              "How to join Mudra dance club?"
+            ],
+            "responses": [
+              "Aakarshan is a cultural club promoting cultural activities and events. Kaivalya focuses on spiritual and philosophical discussions, while Mudra is a dance club promoting dance-related activities."
+            ]
+          },
+          {
+            "tag": "Contact Information",
+            "patterns": [
+              "How can I contact the Autonomous Exam Branch?",
+              "What is the email ID for Placements at KMIT?",
+              "Contact details for Non-Autonomous (JNTUH-Exams) branch?"
+            ],
+            "responses": [
+              "You can reach the Autonomous Exam Branch at +91-9391614325 or autonomousams@gmail.com. For Placements, email exams@kmit.in. For Non-Autonomous (JNTUH-Exams), call 040-23261407."
+            ]
+          },
+          {
+            "tag": "Placements",
+            "patterns": [
+              "Tell me about the placement statistics for 2023-2024 batch.",
+              "Average salary and highest salary in placements?",
+              "How many students got offers above 20 lakhs per annum?"
+            ],
+            "responses": [
+              "For the 2023-2024 batch, KMIT recorded a high number of placements with an average salary of 9.69 LPA. Several students received offers above 20 lakhs per annum."
+            ]
+          },
+          {
+            "tag": "College Information",
+            "patterns": [
+              "Tell me about Keshav Memorial Institute of Technology (KMIT).",
+              "Where is the KMIT campus located?",
+              "Affiliations and approvals for KMIT?"
+            ],
+            "responses": [
+              "Keshav Memorial Institute of Technology (KMIT) is one of the premier engineering colleges in Telangana. It is located in Narayanaguda, Hyderabad, and is affiliated with JNTU, approved by AICTE, and recognized by the Govt. of Telangana."
+            ]
+          }
+        ]
+      }
